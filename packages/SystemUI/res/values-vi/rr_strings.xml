@@ -31,7 +31,7 @@
   <!-- Screenshot Delete Toast -->
   <string name="delete_screenshot_toast">Đã xoá ảnh chụp màn hình</string>
   <string name="gestures_message">Vẽ các cử chỉ của bạn ở đây</string>
-  <string name="rr_sys_tuner">Bộ điều hướng giao diện người dùng hệ thống</string>
+  <string name="rr_sys_tuner">Bộ điều chỉnh giao diện người dùng hệ thống</string>
   <!-- Strings for lockscreen shortcut hints -->
   <string name="left_shortcut_hint">Vuốt qua phải để mở %1$s</string>
   <string name="right_shortcut_hint">Vuốt qua trái để mở %1$s</string>
@@ -186,4 +186,8 @@
   <string name="tasklist_memory_usage">"Trống • Tổng bộ nhớ : <xliff:g id="number">%s</xliff:g> • <xliff:g id="name">%s</xliff:g>"</string>
   <string name="message_keep_one_launcher">Nên giữ ít nhất một hoạt động trang chủ!</string>
   <string name="tm_clear_task">XÓA</string>
+  <!-- Slim recents app sidebar queue app toast -->
+  <!-- Sim recents on keyguard -->
+  <!-- Kill button in notification guts -->
+  <!-- OmniJAWS -->
 </resources>
