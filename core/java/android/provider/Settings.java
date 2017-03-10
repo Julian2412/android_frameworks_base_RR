@@ -5671,6 +5671,12 @@ public static final String PHONE_BLACKLIST_REGEX_ENABLED = "phone_blacklist_rege
          */
         public static final String RECENT_CARD_TEXT_COLOR = "recent_card_text_color";
 
+	    /**
+         * show the membar in slim recents
+         *  @hide
+         */
+        public static final String SLIM_RECENTS_MEM_DISPLAY = "slim_recents_mem_display";
+
         /**
          * Unlock keystore with fingerprint after reboot
          * @hide
@@ -5739,6 +5745,12 @@ public static final String PHONE_BLACKLIST_REGEX_ENABLED = "phone_blacklist_rege
          * @hide
          */
         public static final String OMNIJAWS_WEATHER_ICON_PACK = "omnijaws_weather_icon_pack";
+
+        /**
+         * Disable FC Notifications
+         * @hide
+         */
+        public static final String DISABLE_FC_NOTIFICATIONS = "disable_fc_notifications";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
@@ -8451,6 +8463,12 @@ public static final String PHONE_BLACKLIST_REGEX_ENABLED = "phone_blacklist_rege
         public static final String QS_BATTERY_EASY_TOGGLE = "qs_battery_easy_toggle";
 
         /**
+         * Enable single click to turn Location services on or off.
+         * @hide
+         */
+        public static final String QS_LOCATION_EASY_TOGGLE = "qs_location_easy_toggle";
+
+        /**
          * Whether the device should doze if configured.
          * @hide
          */
@@ -8968,6 +8986,12 @@ public static final String PHONE_BLACKLIST_REGEX_ENABLED = "phone_blacklist_rege
          * @hide
          */
         public static final String WEB_ACTION_ENABLED = "web_action_enabled";
+
+        /**
+         * Force authorize Substratum (or equivalent) frontend calling packages by Masquerade
+         * @hide
+         */
+        public static final String FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES = "force_authorize_substratum_packages";
 
         /**
          * This are the settings to be backed up.
