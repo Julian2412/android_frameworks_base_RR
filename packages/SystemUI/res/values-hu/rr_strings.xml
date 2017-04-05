@@ -151,6 +151,10 @@
   <!-- Language\Locale Tile -->
   <string name="quick_settings_locale_label">Nyelv</string>
   <string name="quick_settings_locale_more_locales_toast">Kérjük, állítson be több nyelvet a váltás engedélyezéséhez</string>
+  <!-- Suspend Actions Tile -->
+  <string name="accessibility_quick_settings_suspend_actions_on">Felfüggesztett műveletek bekapcsolva</string>
+  <string name="accessibility_quick_settings_suspend_actions_off">Felfüggesztett műveletek kikapcsolva</string>
+  <string name="quick_settings_suspend_actions_label">Felfüggesztett műveletek</string>
   <!-- Compass QS Tile -->
   <string name="quick_settings_compass_label">Iránytű</string>
   <string name="quick_settings_compass_value"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
@@ -203,13 +207,14 @@
   <string name="tasklist_memory_usage">"Szabad • Összes memória : <xliff:g id="number">%s</xliff:g> • <xliff:g id="name">%s</xliff:g>"</string>
   <string name="message_keep_one_launcher">Legalább egy kezdő tevékenységet meg kell tartania!</string>
   <string name="tm_clear_task">TÖRLÉS</string>
+  <!-- Slim Recents -->
+  <string name="recents_multiwin_warning">A többablakos munkamenet már aktív.\nCsak érintsen meg egy alkalmazást, ha rögzíteni szeretné azt.</string>
+  <string name="recents_multiwin_nolastapp">Eltávolította az összes előzményt, kérjük, válasszon egy alkalmazást az indítóból vagy a fiókból.</string>
+  <string name="slim_recent_keyguard">Oldja fel eszközét az előzmények megtekintéséhez</string>
+  <string name="slim_recent_pinned">Képernyő rögzítésének feloldása az előzmények megtekintéséhez</string>
   <!-- Slim recents app sidebar queue app toast -->
   <string name="toast_recents_queue_app">%s indítása az előzmények bezárása után</string>
   <string name="toast_recents_cancel_queued_app">Alkalmazás indításának megszakítása</string>
-  <!-- Sim recents on keyguard -->
-  <string name="slim_recent_keyguard">Oldja fel eszközét az előzmények megtekintéséhez</string>
-  <string name="recents_multiwin_warning">A többablakos munkamenet már aktív.\nCsak érintsen meg egy alkalmazást, ha rögzíteni szeretné azt.</string>
-  <string name="recents_multiwin_nolastapp">Eltávolította az összes előzményt, kérjük, válasszon egy alkalmazást az indítóból vagy a fiókból.</string>
   <!-- Kill button in notification guts -->
   <string name="force_stop_dlg_title">Kényszeríti a leállítást?</string>
   <string name="force_stop_dlg_text">Ha egy alkalmazást leállásra kényszerít, instabilan viselkedhet.</string>
@@ -227,4 +232,7 @@
   <string name="status_bar_weather_format"><xliff:g id="temp">%1$s</xliff:g> <xliff:g id="condition">%2$s</xliff:g></string>
   <!-- volte icon switch -->
   <string name="status_bar_volte">VOLTE</string>
+  <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+  <string name="keyguard_indication_dash_charging_time">Dash töltés (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> a teljes töltöttségig)</string>
+  <string name="keyguard_plugged_in_dash_charging">Dash töltés</string>
 </resources>
