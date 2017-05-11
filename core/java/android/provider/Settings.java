@@ -5008,7 +5008,7 @@ public static final String PHONE_BLACKLIST_REGEX_ENABLED = "phone_blacklist_rege
          * Alternative recent apps integration using OmniSwitch
          * @hide
          */
-        public static final String RECENTS_USE_OMNISWITCH = "recents_use_omniswitch";
+        public static final String NAVIGATION_BAR_RECENTS = "navigation_bar_recents";
 
 		/**
          * Whether to mute annoying notifications
@@ -5549,7 +5549,7 @@ public static final String PHONE_BLACKLIST_REGEX_ENABLED = "phone_blacklist_rege
          */
         public static final String LOCK_SCREEN_WEATHER_ICON_COLOR = "lock_screen_weather_icon_color";
 
-	/**
+	   /**
          * Define if screenshot crop & share is active
          * @hide
          */
@@ -5979,6 +5979,12 @@ public static final String PHONE_BLACKLIST_REGEX_ENABLED = "phone_blacklist_rege
          * @hide
          */
         public static final String DATA_ACTIVITY_ARROWS = "data_activity_arrows";
+
+        /**
+         * Whether to show QS footer warnings
+         * @hide
+         */
+        public static final String QS_FOOTER_WARNINGS = "qs_footer_warnings";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings

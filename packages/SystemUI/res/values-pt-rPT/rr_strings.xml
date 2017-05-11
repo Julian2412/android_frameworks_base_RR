@@ -224,7 +224,7 @@
   <string name="action_save_success">Guardado</string>
   <string name="action_save_fault">Não foi guardado</string>
   <string name="action_edit">Editar</string>
-  <string name="recents_custom_android_n">Limpar tudo</string>
+  <string name="recents_custom_android_n">LIMPAR TUDO</string>
   <string name="recents_free_ram">RAM livre: %1$d MB</string>
   <!-- Path data for Solid battery -->
   <!-- Task Manager -->
@@ -255,6 +255,8 @@
   <string name="omnijaws_label_default">Meteorologia</string>
   <string name="omnijaws_current_text">Agora</string>
   <string name="omnijaws_package_not_available">OmniJaws não disponível</string>
+  <string name="omnijaws_service_error_long">Erro ao carregar os dados meteorológicos</string>
+  <string name="omnijaws_service_disabled">Serviço desativado</string>
   <!-- Weather string format in expanded statusbar header -->
   <string name="status_bar_weather_format"><xliff:g id="temp">%1$s</xliff:g> <xliff:g id="condition">%2$s</xliff:g></string>
   <!-- volte icon switch -->

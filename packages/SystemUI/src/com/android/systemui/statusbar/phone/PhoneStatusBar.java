@@ -223,6 +223,7 @@ import com.android.systemui.statusbar.policy.KeyguardMonitor;
 import com.android.systemui.statusbar.policy.KeyguardUserSwitcher;
 import com.android.systemui.statusbar.policy.LocationControllerImpl;
 import com.android.systemui.statusbar.policy.NetworkController;
+import com.android.systemui.statusbar.policy.NetworkTraffic;
 import com.android.systemui.statusbar.policy.MinitBattery;
 import com.android.systemui.statusbar.policy.MinitBatteryController;
 import com.android.systemui.statusbar.policy.NetworkController;
@@ -493,6 +494,8 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
 	private boolean mShow4G;
 	private boolean mShow3G;
 
+    private NetworkTraffic mTraffic;
+
     // Custom Logos
     private boolean mCustomlogo;
     private ImageView mCLogo;
@@ -745,7 +748,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                  Settings.System.ENABLE_TASK_MANAGER),
                  false, this, UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.USE_SLIM_RECENTS), false, this,
+                    Settings.System.NAVIGATION_BAR_RECENTS), false, this,
                     UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.RECENT_CARD_BG_COLOR), false, this,
@@ -773,6 +776,9 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                     false, this, UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.OMNIJAWS_WEATHER_ICON_PACK),
+                    false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_FOOTER_WARNINGS),
                     false, this, UserHandle.USER_ALL);
             update();
         }
@@ -860,7 +866,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                     RecentsActivity.startBlurTask();
                     updatePreferences(mContext);
             } else if (uri.equals(Settings.System.getUriFor(
-                    Settings.System.USE_SLIM_RECENTS))) {
+                    Settings.System.NAVIGATION_BAR_RECENTS))) {
                 updateRecents();
             } else if (uri.equals(Settings.System.getUriFor(
                     Settings.System.RECENT_CARD_BG_COLOR))) {
@@ -904,6 +910,10 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
             UpdateEmptyShadeShowWifiName();
             UpdateEmptyShadeTextColor();
 
+            mTraffic = (NetworkTraffic) mStatusBarView.findViewById(R.id.networkTraffic);
+            if (mTraffic != null) {
+                mTraffic.setSecurityController(mSecurityController);
+            }
 
             mMaxKeyguardNotifConfig = Settings.System.getIntForUser(resolver,
                     Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, 5, mCurrentUserId);
@@ -6540,10 +6550,10 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
     }
 
     protected void updateRecents() {
-        boolean slimRecents = Settings.System.getIntForUser(mContext.getContentResolver(),
-                Settings.System.USE_SLIM_RECENTS, 0, UserHandle.USER_CURRENT) == 1;
+        int slimRecents = Settings.System.getIntForUser(mContext.getContentResolver(),
+                Settings.System.NAVIGATION_BAR_RECENTS, 0, UserHandle.USER_CURRENT);
 
-        if (slimRecents) {
+        if (slimRecents == 3) {
             mSlimRecents = new RecentController(mContext, mLayoutDirection);
             mRecents = null;
             //mSlimRecents.setCallback(this);
