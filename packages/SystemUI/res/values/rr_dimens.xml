@@ -16,6 +16,10 @@
 */
 -->
 <resources>
+
+    <!-- Custom Carrier Label -->
+    <dimen name="status_bar_carrier_height">14sp</dimen>
+
     <!-- Floating action button -->
     <dimen name="floating_action_button_height">54dp</dimen>
     <dimen name="floating_action_button_width">54dp</dimen>
@@ -124,5 +128,8 @@
 
     <!-- Padding end for weather text -->
     <dimen name="status_bar_weather_padding_end">16dp</dimen>
+
+    <!-- Recents lock icon margin -->
+    <dimen name="recents_lock_margin_end">35dp</dimen>
 
 </resources>

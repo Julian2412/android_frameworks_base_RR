@@ -137,14 +137,14 @@
   <string name="accessibility_quick_settings_heads_up_changed_on">As notificações pop-up foram ativadas</string>
   <!-- Location Tile -->
   <string name="accessibility_quick_settings_location_battery_saving">Modo de localização: poupança de bateria.</string>
-  <string name="accessibility_quick_settings_location_gps_only">Modo de localização: apenas dispositivo.</string>
+  <string name="accessibility_quick_settings_location_gps_only">Modo de localização: apenas no dispositivo.</string>
   <string name="accessibility_quick_settings_location_high_accuracy">Modo de localização: alta precisão.</string>
   <string name="accessibility_quick_settings_location_changed_battery_saving">Modo de localização alterado para poupança de bateria.</string>
-  <string name="accessibility_quick_settings_location_changed_gps_only">Modo de localização alterado para apenas dispositivo.</string>
+  <string name="accessibility_quick_settings_location_changed_gps_only">Modo de localização alterado para apenas no dispositivo.</string>
   <string name="accessibility_quick_settings_location_changed_high_accuracy">Modo de localização alterado para alta precisão.</string>
   <string name="quick_settings_location_detail_title">Modo de localização</string>
   <string name="quick_settings_location_battery_saving_label">Poupança de bateria</string>
-  <string name="quick_settings_location_gps_only_label">Apenas dispositivo</string>
+  <string name="quick_settings_location_gps_only_label">Apenas no dispositivo</string>
   <string name="quick_settings_location_high_accuracy_label">Alta precisão</string>
   <string name="quick_settings_location_off_label">Localização desligada</string>
   <string name="quick_settings_location_off_custom_label">Localização</string>
@@ -236,7 +236,7 @@
   <string name="tm_clear_task">LIMPAR</string>
   <!-- Slim Recents -->
   <string name="recents_multiwin_warning">Já está ativada uma sessão multi-janelas.\nToque numa aplicação que deseja ancorá-la agora.</string>
-  <string name="recents_multiwin_nolastapp">Removeu todas as aplicações recentes. Por favor, escolha uma aplicação do lançador ou gaveta de aplicações.</string>
+  <string name="recents_multiwin_nolastapp">Removeu todas as aplicações recentes. Por favor, escolha uma aplicação do lançador ou painel de aplicações.</string>
   <string name="slim_recent_keyguard">Desbloqueie o dispositivo para ver as aplicações recentes</string>
   <string name="slim_recent_pinned">Soltar o ecrã para ver as aplicações recentes</string>
   <!-- Slim recents app sidebar queue app toast -->
@@ -268,4 +268,7 @@
   <string name="status_bar_vpn">VPN</string>
   <!-- data saver icon switch -->
   <string name="status_bar_datasaver">Poupança de dados</string>
+  <!-- No navigation warning notification -->
+  <string name="no_navigation_warning_title">Todos os métodos de navegação desativados</string>
+  <string name="no_navigation_warning_text">Toque para ativar</string>
 </resources>
